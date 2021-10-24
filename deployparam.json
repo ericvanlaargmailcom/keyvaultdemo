@@ -1,0 +1,20 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "adminUsername": {
+        "value": "student"
+      },
+      "adminPassword": {
+        "reference": {
+            "keyVault": {
+                "id": "/subscriptions/0f173c92-5095-4c91-8706-262256870b69/resourceGroups/rg-keyvault-demo-we-001/providers/Microsoft.KeyVault/vaults/myownkeyvaulteje"
+      },
+      "secretName": "azvmpassword",
+    }
+},
+      "dnsLabelPrefix": {
+        "value": "ejeje241021"
+      }
+    }
+  }
