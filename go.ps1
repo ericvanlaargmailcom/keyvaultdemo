@@ -1,9 +1,9 @@
-# New-AzResourceGroup -Name rg-keyvaultdeployed-demo-001 -Location westeurope -verbose
+New-AzResourceGroup -Name rg-keyvaultdeployed-demo-001 -Location westeurope -verbose
 
-# New-AzResourceGroupDeployment `
-# -ResourceGroupName rg-keyvaultdeployed-demo-001 `
-# -TemplateURI ./deploy.json `
-# -TemplateParameterFile ./deployparam.json `
-# -Verbose
+New-AzResourceGroupDeployment `
+-ResourceGroupName rg-keyvaultdeployed-demo-001 `
+-TemplateURI ./deploy.json `
+-TemplateParameterFile ./deployparam.json `
+-Verbose
 
-Remove-AzResourceGroup -Name rg-keyvaultdeployed-demo-001 -Force -verbose
+# Remove-AzResourceGroup -Name rg-keyvaultdeployed-demo-001 -Force -verbose
