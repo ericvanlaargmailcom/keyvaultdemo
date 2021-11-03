@@ -6,4 +6,4 @@ New-AzResourceGroupDeployment `
 -TemplateParameterFile ./deployparam.json `
 -Verbose
 
-# Remove-AzResourceGroup -Name rg-keyvaultdeployed-demo-001 -Force -verbose
+Remove-AzResourceGroup -Name rg-keyvaultdeployed-demo-001 -Force -verbose
