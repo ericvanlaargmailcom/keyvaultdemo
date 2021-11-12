@@ -14,4 +14,6 @@ New-AzResourceGroupDeployment `
 
 read-host "Press enter to cleanup the demo"
 Remove-AzResourceGroup -Name NetworkWatcherRG -Force -verbose
-Remove-AzResourceGroup -Name rg-keyvaultdeployed-demo-001 -Force -verbose
+Remove-AzResourceGroup -Name $rg -Force -verbose
+
+Set-AzContext -Subscription "af86d54a-4949-4bb5-997d-9dd0f288655a"
