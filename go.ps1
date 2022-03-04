@@ -1,8 +1,8 @@
-$msdnsub = "9c108632-3066-4862-b0db-b34e82ba633d"
+$subID = "9c108632-3066-4862-b0db-b34e82ba633d"
 $rg = "rg-keyvaultdeployed-demo-001"
 $location = "northeurope"
 
-Set-AzContext -Subscription $msdnsub
+Set-AzContext -Subscription $subID
 
 New-AzResourceGroup -Name $rg -Location $location -verbose
 
