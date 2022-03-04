@@ -1,9 +1,10 @@
 $Tenant = "8c781dba-1521-44e4-9886-e37f91a6f736"
 $SubID = "9c108632-3066-4862-b0db-b34e82ba633d"
+# $PaygoSubID = "af86d54a-4949-4bb5-997d-9dd0f288655a"
 $rgName = "rg-keyvaultdeployed-demo-001"
 $Location = "northeurope"
 
-if ([string]::IsNullOrEmpty($(Get-AzContext).Account)) {Connect-AzAccount -Tenant $Tenant -SubscriptionId $SubID} -verbose
+if ([string]::IsNullOrEmpty($(Get-AzContext).Account)) {Connect-AzAccount -Tenant $Tenant -SubscriptionId $SubID}
 
 Set-AzContext -Subscription $SubID
 
