@@ -10,9 +10,9 @@ New-AzVm `
     -SubnetName 'Subnet01' `
     -SecurityGroupName 'NetworkSecurityGroup01' `
     -PublicIpAddressName 'PublicIpAddress01' `
-    -OpenPorts 80,3389
+    -OpenPorts 80,3389 `
+    -Verbose
     
-    
-# Install-WindowsFeature -Name Web-Server -IncludeManagementTools
+# todo via DSC Install-WindowsFeature -Name Web-Server -IncludeManagementTools
 read-host "Press enter to cleanup the demo"
 Remove-AzResourceGroup -Name 'rgcreatedemovm' -verbose -Force
