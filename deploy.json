@@ -97,7 +97,7 @@
       },
       "vmName": {
         "type": "string",
-        "defaultValue": "simple-vm",
+        "defaultValue": "keyvault-vm",
         "metadata": {
           "description": "Name of the virtual machine."
         }
@@ -106,11 +106,11 @@
     "functions": [],
     "variables": {
       "storageAccountName": "[format('bootdiags{0}', uniqueString(resourceGroup().id))]",
-      "nicName": "myVMNic",
+      "nicName": "keyvaultVMNic",
       "addressPrefix": "10.0.0.0/16",
       "subnetName": "Subnet",
       "subnetPrefix": "10.0.0.0/24",
-      "virtualNetworkName": "MyVNET",
+      "virtualNetworkName": "keyvaultVNET",
       "networkSecurityGroupName": "default-NSG"
     },
     "resources": [
