@@ -16,6 +16,6 @@ read-host "Press enter to cleanup the demo"
 Remove-AzResourceGroup -Name NetworkWatcherRG -Force -verbose
 Remove-AzResourceGroup -Name $rgName -Force -verbose
 
-Set-AzContext -Subscription "9c108632-3066-4862-b0db-b34e82ba633d"
+# Set-AzContext -Subscription "9c108632-3066-4862-b0db-b34e82ba633d"
 ## this is a new line
 ## dit lijntje erbij
