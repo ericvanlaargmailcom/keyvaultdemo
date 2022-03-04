@@ -1,6 +1,6 @@
-$SubID = "<SUBSCRIPTION ID>" 
-$RgName = "<RESOURCE GROUP NAME>" 
-$VmName = "<VM NAME>" 
+$SubID = "9c108632-3066-4862-b0db-b34e82ba633d"
+$rgName = "rg-keyvaultdeployed-demo-001" 
+$VmName = "" 
 $Location = "<LOCATION>" 
 
 Connect-AzAccount 
