@@ -3,9 +3,7 @@ $SubID = "9c108632-3066-4862-b0db-b34e82ba633d"
 $rgName = "rg-keyvaultdeployed-demo-001"
 $Location = "northeurope"
 
-if ([string]::IsNullOrEmpty($(Get-AzContext).Account)) {Connect-AzAccount -Tenant $Tenant -SubscriptionId $SubID}
-#read-host "Press enter to login to Traineraccount & MSDN subscription"
-#Connect-AzAccount -Tenant $Tenant -SubscriptionId $SubID
+if ([string]::IsNullOrEmpty($(Get-AzContext).Account)) {Connect-AzAccount -Tenant $Tenant -SubscriptionId $SubID} -verbose
 
 Set-AzContext -Subscription $SubID
 
