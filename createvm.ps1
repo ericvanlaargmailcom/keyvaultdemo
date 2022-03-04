@@ -1,3 +1,5 @@
+if ([string]::IsNullOrEmpty($(Get-AzContext).Account)) {Connect-AzAccount}
+
 New-AzResourceGroup -Name 'rgcreatedemovm' -Location 'westeurope'
 
 New-AzVm `
@@ -11,6 +13,6 @@ New-AzVm `
     -OpenPorts 80,3389
     
     
-
 # Install-WindowsFeature -Name Web-Server -IncludeManagementTools
+read-host "Press enter to cleanup the demo"
 Remove-AzResourceGroup -Name 'rgcreatedemovm' -verbose -Force
