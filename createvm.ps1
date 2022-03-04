@@ -1,7 +1,7 @@
-New-AzResourceGroup -Name rgdemocreatevm -Location 'westeurope'
+New-AzResourceGroup -Name 'rgcreatedemovm' -Location 'westeurope'
 
 New-AzVm `
-    -ResourceGroupName 'rgdemocreatevm' `
+    -ResourceGroupName 'rgcreatedemovm' `
     -Name 'VM01' `
     -Location 'westeurope' `
     -VirtualNetworkName 'Vnet01' `
@@ -11,6 +11,6 @@ New-AzVm `
     -OpenPorts 80,3389
     
     
-# Get-AzPublicIpAddress -ResourceGroupName 'myResourceGroup' | Select-Object -Property  'IpAddress'
-# mstsc /v:publicIpAddress
+
 # Install-WindowsFeature -Name Web-Server -IncludeManagementTools
+Remove-AzResourceGroup -Name 'rgcreatedemovm' -verbose -Force
