@@ -1,8 +1,8 @@
-$SubId = "9c108632-3066-4862-b0db-b34e82ba633d"
+$SubID = "9c108632-3066-4862-b0db-b34e82ba633d"
 $rg = "rg-keyvaultdeployed-demo-001"
 $location = "northeurope"
 
-Set-AzContext -Subscription $subID
+Set-AzContext -Subscription $SubID
 
 New-AzResourceGroup -Name $rg -Location $location -verbose
 
