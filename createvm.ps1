@@ -1,4 +1,6 @@
 if ([string]::IsNullOrEmpty($(Get-AzContext).Account)) {Connect-AzAccount}
+$SubID = "9c108632-3066-4862-b0db-b34e82ba633d"
+Set-AzContext -Subscription $SubID
 
 New-AzResourceGroup -Name 'rgcreatedemovm' -Location 'westeurope'
 
