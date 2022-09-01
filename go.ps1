@@ -18,5 +18,5 @@ New-AzResourceGroupDeployment `
 read-host "Press enter to cleanup the demo"
 Remove-AzResourceGroup -Name NetworkWatcherRG -Force -verbose
 Remove-AzResourceGroup -Name $rgName -Force -verbose
-#added comment
+added comment
 
