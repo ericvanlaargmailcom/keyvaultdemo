@@ -1,20 +1,25 @@
-$msdnsub = "9c108632-3066-4862-b0db-b34e82ba633d"
-$rg = "rg-keyvaultdeployed-demo-001"
-$location = "northeurope"
+$Tenant = "8c781dba-1521-44e4-9886-e37f91a6f736"
+$SubID = "9c108632-3066-4862-b0db-b34e82ba633d"
+# $PaygoSubID = "af86d54a-4949-4bb5-997d-9dd0f288655a"
+$rgName = "rg_keyvaultdeployed_demo_001"
+$Location = "northeurope"
 
-Set-AzContext -Subscription $msdnsub
+if ([string]::IsNullOrEmpty($(Get-AzContext).Account)) {Connect-AzAccount -Tenant $Tenant -SubscriptionId $SubID}
 
-New-AzResourceGroup -Name $rg -Location $location -verbose
+Set-AzContext -Subscription $SubID
 
+New-AzResourceGroup -Name $rgName -Location $Location -verbose
 New-AzResourceGroupDeployment `
--ResourceGroupName $rg `
+-ResourceGroupName $rgName `
 -TemplateURI ./deploy.json `
 -TemplateParameterFile ./deployparam.json `
 -Verbose
 
 read-host "Press enter to cleanup the demo"
 Remove-AzResourceGroup -Name NetworkWatcherRG -Force -verbose
-Remove-AzResourceGroup -Name $rg -Force -verbose
+Remove-AzResourceGroup -Name $rgName -Force -verbose
+added comment
+
 
 Set-AzContext -Subscription "9c108632-3066-4862-b0db-b34e82ba633d"
 ## this is a new line
