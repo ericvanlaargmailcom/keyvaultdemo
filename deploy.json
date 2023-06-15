@@ -83,7 +83,7 @@
       },
       "vmSize": {
         "type": "string",
-        "defaultValue": "Standard_DS1_v2",
+        "defaultValue": "Standard_DS2_v2",
         "metadata": {
           "description": "Size of the virtual machine."
         }
@@ -97,7 +97,7 @@
       },
       "vmName": {
         "type": "string",
-        "defaultValue": "keyvault-vm",
+        "defaultValue": "keyvaultvm",
         "metadata": {
           "description": "Name of the virtual machine."
         }
@@ -147,7 +147,7 @@
         "properties": {
           "securityRules": [
             {
-              "name": "default-allow-3389",
+              "name": "default-allow-3ss389",
               "properties": {
                 "priority": 1000,
                 "access": "Allow",
@@ -239,7 +239,7 @@
             "osDisk": {
               "createOption": "FromImage",
               "managedDisk": {
-                "storageAccountType": "StandardSSD_LRS"
+                "storageAccountType": "Standard_LRS"
               }
             },
             "dataDisks": [
