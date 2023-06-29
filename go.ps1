@@ -1,5 +1,5 @@
 $Tenant = "8c781dba-1521-44e4-9886-e37f91a6f736"
-$SubID = "9c108632-3066-4862-b0db-b34e82ba633d"
+$SubID = "ef17a603-a390-49bd-946c-cc18aa67f388"
 # $PaygoSubID = "af86d54a-4949-4bb5-997d-9dd0f288655a"
 $rgName = "rg_keyvaultdeployed_demo_001"
 $Location = "northeurope"
@@ -15,7 +15,7 @@ New-AzResourceGroupDeployment `
 -TemplateParameterFile ./deployparam.json `
 -Verbose
 
-1read-host "Press enter to cleanup the demo"
+read-host "Press enter to cleanup the demo"
 Remove-AzResourceGroup -Name NetworkWatcherRG -Force -verbose
 Remove-AzResourceGroup -Name $rgName -Force -verbose
 
