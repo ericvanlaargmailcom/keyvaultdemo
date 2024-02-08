@@ -1,4 +1,4 @@
-$SubID = "9c108632-3066-4862-b0db-b34e82ba633d"
+$SubID = "ef17a603-a390-49bd-946c-cc18aa67f388"
 $rgName = "rg_keyvaultdeployed_demo_001" 
 $VmName = "keyvaultvm" 
 
