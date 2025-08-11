@@ -8,7 +8,7 @@
       "adminPassword": {
         "reference": {
             "keyVault": {
-                "id": "/subscriptions/ef17a603-a390-49bd-946c-cc18aa67f388/resourceGroups/keyvault-deploy-sb-we-001/providers/Microsoft.KeyVault/vaults/keyvaulteje"
+                "id": "/subscriptions/ef17a603-a390-49bd-946c-cc18aa67f388/resourceGroups/rg-keyvault-deploy-sandb-we-001/providers/Microsoft.KeyVault/vaults/keyvaulteje"
       },
       "secretName": "azvmpassword"
     }
