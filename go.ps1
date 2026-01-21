@@ -11,7 +11,7 @@ Set-AzContext -Subscription $SubID
 New-AzResourceGroup -Name $rgName -Location $Location -verbose
 New-AzResourceGroupDeployment `
 -ResourceGroupName $rgName `
--TemplateURI ./deploy.json `
+-TemplateFile ./deploy.json `
 -TemplateParameterFile ./deployparam.json `
 -Verbose
 
