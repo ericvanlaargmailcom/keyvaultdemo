@@ -1,10 +1,10 @@
-$SubID = "ef17a603-a390-49bd-946c-cc18aa67f388"
-$rgName = "rg_keyvaultdeployed_demo_001" 
-$VmName = "keyvaultvm" 
+$SubID = '9c108632-3066-4862-b0db-b34e82ba633d'
+$rgName = 'rg-keyvaultdeployed-demo-001'
+$VmName = 'keyvault-vm'
 
 Select-AzSubscription -SubscriptionId $SubID -Verbose
 
 $vm = Get-AzVm -Name $VmName -ResourceGroupName $rgName
 
-$vm.HardwareProfile.vmSize = "Standard_D2s_v3"
+$vm.HardwareProfile.vmSize = 'Standard_D2as_v5'
 Update-AzVM -ResourceGroupName $rgName -VM $vm -Verbose
