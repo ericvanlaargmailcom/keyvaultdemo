@@ -2,14 +2,5 @@
   "json.schemaDownload.enable": true,
   "json.schemaDownload.trustedDomains": {
     "https://schema.management.azure.com/": true
-  },
-  "powershell.powerShellAdditionalExePaths": {
-    "Homebrew PowerShell 7.5.5": "/opt/homebrew/bin/pwsh"
-  },
-  "powershell.powerShellDefaultVersion": "Homebrew PowerShell 7.5.5",
-  "terminal.integrated.profiles.osx": {
-    "PowerShell (Homebrew)": {
-      "path": "/opt/homebrew/bin/pwsh"
-    }
   }
 }
