@@ -67,7 +67,7 @@ The template outputs the public hostname of the VM after deployment.
 
 `deployparam.json` expects the admin password to come from an existing Azure Key Vault secret:
 
-- Key Vault resource ID: `/subscriptions/ef17a603-a390-49bd-946c-cc18aa67f388/resourceGroups/rg-keyvault-deploy-sandb-we-001/providers/Microsoft.KeyVault/vaults/keyvaulteje`
+- Key Vault resource ID: `/subscriptions/ef17a603-a390-49bd-946c-cc18aa67f388/resourceGroups/rg-keyvault-deploy-sandb-be-001/providers/Microsoft.KeyVault/vaults/keyvaultejebc`
 - Secret name: `azvmpassword`
 
 Before running the deployment, make sure:
